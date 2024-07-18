@@ -3,7 +3,6 @@ package coid.juaracoding.pcmtestng.automation;
 import coid.juaracoding.pcmtestng.testing.AritmatikaTandingan;
 import coid.juaracoding.pcmtestng.testing.OperatorAritmatika;
 import org.testng.Assert;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -23,12 +22,15 @@ public class TestOperatorAritmatika {
     private OperatorAritmatika operatorAritmatika;
     private AritmatikaTandingan aritmatikaTandingan;
     private Random random;
+    private int intZ ;
+
 //    @BeforeTest
-    @BeforeSuite
+    @BeforeTest
     public void prepare(){
-        operatorAritmatika = new OperatorAritmatika();
         random = new Random();
         aritmatikaTandingan = new AritmatikaTandingan();
+        intZ = random.nextInt();
+                operatorAritmatika = new OperatorAritmatika();
     }
 
 //        3
@@ -86,24 +88,24 @@ public class TestOperatorAritmatika {
         double douB = random.nextDouble(1.0,10000.0);//10
         double proses = operatorAritmatika.tambah(douA,douB);
 //        double proses = operatorAritmatika.tambah(5,3);
-        Assert.assertEquals(proses,aritmatikaTandingan.tambah(douA,douB));
+        Assert.assertEquals(proses,aritmatikaTandingan.tambah(douA,douB),"Berhasil");
     }
     @Test(priority = 3)
-    public void testKurang(){
+    public void testPengurangan(){
         System.out.println("ID Thread testKurang : "+Thread.currentThread().getId());
         System.out.println("2");
         double proses = operatorAritmatika.kurang(10,1);
         Assert.assertEquals(9,proses);
     }
     @Test(priority = 2)
-    public void testBagi(){
+    public void testPembagian(){
         System.out.println("ID Thread testBagi : "+Thread.currentThread().getId());
         System.out.println("3");
         double proses = operatorAritmatika.bagi(12,3);
         Assert.assertEquals(4,proses);
     }
     @Test(priority = 1)
-    public void testKali(){
+    public void testPerkalian(){
         System.out.println("ID Thread testKali : "+Thread.currentThread().getId());
         System.out.println("4");
         double proses = operatorAritmatika.kali(2,4);
