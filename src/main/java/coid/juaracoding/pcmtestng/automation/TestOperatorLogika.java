@@ -1,7 +1,9 @@
 package coid.juaracoding.pcmtestng.automation;
 
+import coid.juaracoding.pcmtestng.ExtentManager;
 import coid.juaracoding.pcmtestng.testing.OperatorLogika;
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -17,6 +19,7 @@ Version 1.0
 public class TestOperatorLogika {
 
     private OperatorLogika operatorLogika;
+    private static int intLoop=0;
 //    @BeforeTest
     @BeforeTest
     public void prepare(){
@@ -42,5 +45,12 @@ public class TestOperatorLogika {
         System.out.println("ID Thread testOr : "+Thread.currentThread().getId());
         boolean isValid = operatorLogika.logikaOr(false,false);
         Assert.assertFalse(isValid);
+        intLoop++;
+        System.out.println("INT LOOP : "+intLoop);
+    }
+
+    @AfterSuite
+    public void afterSuite() {
+        ExtentManager.endReport();
     }
 }

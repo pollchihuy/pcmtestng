@@ -1,0 +1,51 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<extentreports>-->
+<!--    <configuration>-->
+<!--        &lt;!&ndash; report theme &ndash;&gt;-->
+<!--        &lt;!&ndash; standard, dark &ndash;&gt;-->
+<!--        <documentTitle>TestExecutionReport</documentTitle>-->
+
+<!--        &lt;!&ndash; document encoding &ndash;&gt;-->
+<!--        &lt;!&ndash; defaults to UTF-8 &ndash;&gt;-->
+<!--        <encoding>UTF-8</encoding>-->
+
+<!--        &lt;!&ndash; protocol for script and stylesheets &ndash;&gt;-->
+<!--        &lt;!&ndash; defaults to https &ndash;&gt;-->
+<!--        <protocol>http</protocol>-->
+
+<!--        &lt;!&ndash; title of the document &ndash;&gt;-->
+<!--        <reportName>Test Execution Report-->
+<!--            <![CDATA[-->
+<!--                <img src='D:\jc.svg'/>-->
+<!--            ]]>-->
+<!--&lt;!&ndash;            <image id="image-zoom">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img src='D:/jc.svg' />&ndash;&gt;-->
+<!--&lt;!&ndash;            </image>&ndash;&gt;-->
+<!--        </reportName>-->
+
+<!--        &lt;!&ndash; report name - displayed at top-nav &ndash;&gt;-->
+<!--        <scripts>-->
+<!--            <![CDATA[-->
+<!--                $(document).ready(function() {-->
+
+<!--                });-->
+<!--            ]]>-->
+<!--        </scripts>-->
+
+
+<!--        &lt;!&ndash; location of charts in the test view &ndash;&gt;-->
+<!--        &lt;!&ndash; top, bottom &ndash;&gt;-->
+<!--        <styles>-->
+<!--            <![CDATA[-->
+<!--            .report-name { padding-left: 18px; } .report-name > img { float:-->
+<!--      left;height: 90%;margin-left: 30px;margin-top: 3px;width: auto; }-->
+<!--        ]]>-->
+<!--        </styles>-->
+
+<!--        &lt;!&ndash; custom javascript &ndash;&gt;-->
+<!--        <testViewChartLocation>bottom</testViewChartLocation>-->
+
+<!--        &lt;!&ndash; custom styles &ndash;&gt;-->
+<!--        <theme>dark</theme>-->
+<!--    </configuration>-->
+<!--</extentreports>-->

@@ -3,11 +3,15 @@
 <suite name="Suite-Aritmatika">
   <!--  <test thread-count="2" parallel = "classes" name="Test1">-->
   <!--  <test thread-count="16" parallel = "methods" name="Test1">-->
+  <listeners>
+    <listener
+            class-name="coid.juaracoding.pcmtestng.ExtentReportListener"/>
+  </listeners>
   <test name="Test1" parallel = "methods" thread-count="1">
     <!--  <test name="Test1">-->
     <classes>
       <class name="coid.juaracoding.pcmtestng.automation.TestOperatorAritmatika"/>
-<!--      <class name="coid.juaracoding.pcmtestng.automation.TestOperatorLogika"/>-->
+      <class name="coid.juaracoding.pcmtestng.automation.TestOperatorLogika"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
